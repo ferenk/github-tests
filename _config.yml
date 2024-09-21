@@ -1,4 +1,9 @@
 title: GitHub tests
 description: Just to try features
-show_downloads: true
-remote_theme: personal-jekyll-theme
+url: "https://github.com/ferenk/github-tests"
+keywords: "github, jekyll, test"
+favicon: "/docs/img/tokenz.ico"
+#################
+# Header layout #
+#################
+background-img: "../docs/img/tokenz_poster.jpg"
