@@ -1,6 +1,6 @@
 title: GitHub tests
 description: Just to try features
-remote_theme: jekyll-TeXt-theme
+remote_theme: le4ker/personal-jekyll-theme
 url: "https://github.com/ferenk/github-tests"
 keywords: "github, jekyll, test"
 favicon: "/docs/img/tokenz.ico"
