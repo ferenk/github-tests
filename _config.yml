@@ -13,7 +13,7 @@ google_site_verification: dSXyPF8wjboE3nlpS89FWsrFjURklLwimxdmIloilrk
 # Jekyll theme config
 remote_theme: jeffreytse/jekyll-theme-yat
 show_downloads: true
-favicon: "/docs/img/tokenz.ico"
+favicon: "/docs/img/favicon.ico"
 banner:
   image: "/docs/img/tokenz_poster.jpg"
 header_transparent: true
