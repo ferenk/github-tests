@@ -1,7 +1,7 @@
 title: GitHub tests
 description: Just to try features
-remote_theme: mmistakes/minimal-mistakes
-skin: air
+remote_theme: zerostaticthemes/jekyll-serif-theme
+#skin: air
 url: "https://github.com/ferenk/github-tests"
 keywords: "github, jekyll, test"
 favicon: "/docs/img/tokenz.ico"
