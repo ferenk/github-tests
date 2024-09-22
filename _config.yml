@@ -1,6 +1,6 @@
 title: GitHub tests
 description: Just to try features
-remote_theme: andrewbanchich/forty-jekyll-theme
+remote_theme: jeffreytse/jekyll-theme-yat
 #skin: air
 url: "https://github.com/ferenk/github-tests"
 keywords: "github, jekyll, test"
