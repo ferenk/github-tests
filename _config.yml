@@ -13,9 +13,9 @@ google_site_verification: dSXyPF8wjboE3nlpS89FWsrFjURklLwimxdmIloilrk
 # Jekyll theme config
 remote_theme: jeffreytse/jekyll-theme-yat
 show_downloads: true
-favicon: "github-tests/docs/img/tokenz.ico"
+favicon: "docs/img/tokenz.ico"
 banner:
-  image: "github-tests/docs/img/tokenz_poster.jpg"
+  image: "docs/img/tokenz_poster.jpg"
 header_transparent: true
 night_mode: "auto"
 yat:
