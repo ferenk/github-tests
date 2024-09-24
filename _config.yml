@@ -23,12 +23,7 @@ yat:
   date_format: "%Y-%m-%d %H:%M"
 lang: "en"
 sitemap: true
-theme_color: greenblue
-brand_color: orangered
-selection:
-  color: "#ff00ff"
-  background_color: "yellow"
 defaults:
   home:
-    heading: "Tokenz (for Obsidian)"
+    heading: "Tokenz (Obsidian plugin)"
     subheading: "Smileys, emoticons or any type of short codes you create"
