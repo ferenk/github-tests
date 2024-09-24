@@ -28,9 +28,7 @@ brand_color: orangered
 selection:
   color: "#ff00ff"
   background_color: "yellow"
-code_badge:
-  enabled: true
 defaults:
   home:
     heading: "Tokenz (for Obsidian)"
-    subheading: "Smileys, emoticons - or YOUR own short code maps!"
+    subheading: "Smileys, emoticons or any type of short codes you create"
