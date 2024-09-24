@@ -5,8 +5,8 @@ description: Smileys, emoticons or any type of short codes you create
 email: fmoricz@gmail.com
 author: ferenk
 copyright: "Ferenc Moricz, 2024"
-# url: https://github.com/ferenk/github-tests
-baseurl: https://github.com/ferenk/github-tests
+url: https://github.com/ferenk/github-tests
+# baseurl: https://github.com/ferenk/github-tests
 keywords: "github, test, token, shortcode, smiley, emoticon"
 google_analytics: GTM-T47R9MX8
 google_site_verification: dSXyPF8wjboE3nlpS89FWsrFjURklLwimxdmIloilrk
