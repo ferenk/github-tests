@@ -14,10 +14,10 @@ google_site_verification: dSXyPF8wjboE3nlpS89FWsrFjURklLwimxdmIloilrk
 # Jekyll theme config
 remote_theme: jeffreytse/jekyll-theme-yat
 show_downloads: true
-favicon: "docs/img/tokenz_for_obsidian.ico"
+favicon: docs/img/tokenz_for_obsidian.ico
 banner:
   image: "docs/img/tokenz_poster.jpg"
-header_transparent: true
+header_transparent: false
 night_mode: "auto"
 yat:
   date_format: "%Y-%m-%d %H:%M"
@@ -28,7 +28,9 @@ brand_color: orangered
 selection:
   color: "#ff00ff"
   background_color: "yellow"
+code_badge:
+  enabled: true
 defaults:
   home:
     heading: "Tokenz (for Obsidian)"
-    subheading: "Smileys, emoticons or any type of short codes you create"
+    subheading: "Smileys, emoticons - or YOUR own short code maps!"
