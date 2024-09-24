@@ -25,9 +25,9 @@ lang: "en"
 sitemap: true
 theme_color: greenblue
 brand_color: orangered
-  selection:
-    color: "#ff00ff"
-    background_color: "yellow"
+selection:
+  color: "#ff00ff"
+  background_color: "yellow"
 defaults:
   home:
     heading: "Tokenz (for Obsidian)"
