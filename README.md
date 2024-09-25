@@ -1,4 +1,12 @@
-﻿Insert your frequently used texts or special characters, symbols (e.g emoticons) into your text easily!
+﻿<div align="center" class="not_on_gh-pages">
+  <br>
+  <a href="https://github.com/ferenk/obsidian-tokenz">
+    <img alt="tokenz poster" src="https://ferenk.github.io/github-tests/docs/img/tokenz_poster.jpg" width="830">
+  </a>
+  <h1>Obsidian / Tokenz</h1>
+</div>
+
+Insert your frequently used texts or special characters, symbols (e.g emoticons) into your text easily!
 You can use multiple short code mappings simultenously:
 
 - **Built-in** short code maps:  
