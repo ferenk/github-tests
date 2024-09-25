@@ -1,12 +1,10 @@
-﻿<!--
-{% if site.github %}
+﻿{% if site.github %}
   <style type="text/css">
     .only_github_main_repo {
       display: none;
     }
   </style>
 {% endif %}
--->
 
 <div align="center" class="only_github_main_repo">
   <br>
