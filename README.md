@@ -1,13 +1,13 @@
-﻿<div align="center">
-  <br>
-
-  <a href="https://github.com/ferenk/obsidian-tokenz">
-    <img alt="tokenz poster" src="https://ferenk.github.io/github-tests/docs/img/tokenz_poster.jpg" width="600">
-  </a>
-
-  <h1>Obsidian / Tokenz</h1>
-
-</div>
+﻿{% if site.github %}
+{% else %}
+  <div align="center">
+    <br>
+    <a href="https://github.com/ferenk/obsidian-tokenz">
+      <img alt="tokenz poster" src="https://ferenk.github.io/github-tests/docs/img/tokenz_poster.jpg" width="600">
+    </a>
+    <h1>Obsidian / Tokenz</h1>
+  </div>
+{% endif %}
 
 Insert your frequently used texts or special characters, symbols (e.g emoticons) into your text easily!
 You can use multiple short code mappings simultenously:
