@@ -1,6 +1,6 @@
 #####################
 # Site metadata
-title: Tokenz (Obsidian plugin)
+title: Obsidian plugins / Tokenz
 description: Smileys, emoticons or any type of short codes you create
 email: fmoricz@gmail.com
 author: ferenk
@@ -17,7 +17,8 @@ show_downloads: true
 favicon: docs/img/tokenz_for_obsidian.ico
 banner:
   image: "docs/img/tokenz_poster.jpg"
-header_transparent: false
+header_transparent: true
+content_width: 920px
 night_mode: "auto"
 yat:
   date_format: "%Y-%m-%d %H:%M"
@@ -32,5 +33,5 @@ code_badge:
   enabled: false
 defaults:
   home:
-    heading: "Tokenz (for Obsidian)"
-    subheading: "Smileys, emoticons - or YOUR own short code maps!"
+    heading: "Obsidian: Tokenz (plugin)"
+    subheading: "Smileys, emoticons / or even YOUR own short code map!"
