@@ -1,12 +1,11 @@
-﻿{% if site.github %}
-  <style type="text/css">
-    .only_github_main_repo {
-      display: none;
+﻿  <style type="text/css">
+    .not_on_gh-pages {
+      display: {% if site.github %}none{% endif %};
     }
   </style>
-{% endif %}
 
-<div align="center" class="only_github_main_repo">
+
+<div align="center" class="not_on_gh-pages">
   <br>
   <a href="https://github.com/ferenk/obsidian-tokenz">
     <img alt="tokenz poster" src="https://ferenk.github.io/github-tests/docs/img/tokenz_poster.jpg" width="830">
