@@ -1,8 +1,4 @@
-﻿---
-layout: default
----
-
-Insert your frequently used texts or special characters, symbols (e.g emoticons) into your text easily!
+﻿Insert your frequently used texts or special characters, symbols (e.g emoticons) into your text easily!
 You can use multiple short code mappings simultenously:
 
 - **Built-in** short code maps:  
