@@ -6,8 +6,8 @@
   <h1>Obsidian / Tokenz</h1>
 </div>
 
-Insert your frequently used texts or special characters, symbols (e.g emoticons) into your text easily!
-You can use multiple short code mappings simultenously:
+Use your favourite symbols, special characters and frequently used snippets with ease!
+You can insert it to your document using short code mappings:
 
 - **Built-in** short code maps:  
 	- **emojis**, like ``:smile:`` 🙂 or ``:wink:`` 😉 (1800+ installed by default),  
@@ -23,24 +23,25 @@ Demo video showing the features:<br>
 ## Configuration
 
 ### 1. Installation
-#### 1.1 From Obsidian's Community plugins
+#### 1.1 From Obsidian's Community plugin collection
 **Suggested method**, the easiest way to install:
 1. Open settings (Gear icon)
 2. Click **Options / Community plugins / Community plugins, Browse...** button
 3. Search for "Tokenz"
 4. Install and Enable
+5. Start typing some pre-installed token, e.g. ``:)``
 #### 1.2 From sources
 It's also possible to install it manually:  
 1. Get the sources: ``git clone https://github.com/ferenk/obsidian-tokenz``  
 2. Init the sources folder: ``cd obsidian-tokenz; npm install``  
-3. Built the plugin: ``npm run build``  
+3. Build the plugin: ``npm run build``  
 4. Create a folder in your Obsidian wallet: ``mkdir <your wallet's path>/.obsidian/plugins/tokenz``  
 5. Copy the plugin's files **main.js**, **manifest.json**, **styles.css** into the folder just created  
 6. Restart Obsidian and enable the "Tokenz" plugin  
 7. Start typing ``:)``
 
 ### 2. User defined code maps
-It's easy to define your own code maps. You can choose any format for your short codes (tokens). But you can also mix different formats (see 5.).  
+It's easy to define your own code maps. You can choose any format for your short codes (tokens). But you can also mix different formats (see 4.).  
 1. Choose a name for your code map, e.g **my code map**  
 2. Create a folder named **data** in <Your wallet's path>/.obsidian/plugins/tokenz
 3. Create an index file of the code maps in the data folder just created. It's name must be **maps.lst**.  
@@ -48,7 +49,7 @@ It's easy to define your own code maps. You can choose any format for your short
    ```
    my_code_map.json
    ```
-5. Create your own code map file. It's structure is very simple, for example here are are the codes for our sample paragraph<br>(it demonstrates the easy usage of mixed formats)  
+4. Create your own code map file. Its structure is very simple, for example here are are the codes for our sample paragraph<br>(it also demonstrates the mixed usage of different token formats)  
    Example ***my_code_map.json*** to enter the sample lines
    ```
    {
@@ -62,10 +63,10 @@ It's easy to define your own code maps. You can choose any format for your short
    }
    ```
 
-And now you can insert this to your document this way:
+And now you can insert these symbols to your document this way:
 
-| Format          | Short code example                           | =>  | Result            |
-| --------------- | -------------------------------------------- | --- | ----------------- |
-| IRC style       | ``/prog-20 10%, /prog-50 50%, /prog-90 90%`` | =>  | ▎10%, ▋50%, █ 90% |
-| CSS class       | ``.idea, .success``                          | =>  | 💡, 🏆            |
-| Any crazy style | ``\|tv_episode\|``                           | =>  | 📺                |
+| Format          | Short code example                           |   Result               |
+| --------------- | -------------------------------------------- | ---------------------- |
+| IRC style       | ``/prog-20 20%, /prog-50 /prog-90 90%``      | => ▎ 20%, ▋ 50%, █ 90% |
+| CSS class       | ``.idea, .success``                          | => 💡, 🏆              |
+| Any crazy style | ``\|tv_episode\|``                           | => 📺                  |
