@@ -12,7 +12,7 @@ google_analytics: GTM-T47R9MX8
 google_site_verification: dSXyPF8wjboE3nlpS89FWsrFjURklLwimxdmIloilrk
 #####################
 # Jekyll theme config
-remote_theme: jeffreytse/jekyll-theme-yat
+remote_theme: sproogen/modern-resume-theme
 show_downloads: true
 favicon: docs/img/tokenz_for_obsidian.ico
 banner:
