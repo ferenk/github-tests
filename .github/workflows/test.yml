@@ -1,7 +1,7 @@
 name: Test Actions
 
 jobs:
-	echo_something:
-		runs-on: ubuntu-latest
-			steps:
-			  - run: echo "Hello, world"
+  echo_something:
+    runs-on: ubuntu-latest
+      steps:
+        - run: echo "Hello, world"
