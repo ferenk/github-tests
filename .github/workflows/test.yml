@@ -1,5 +1,9 @@
 name: Test Actions
 
+on:
+  push:
+    branches: [ master, ui_refresh ]
+
 jobs:
   echo_something:
     runs-on: ubuntu-latest
