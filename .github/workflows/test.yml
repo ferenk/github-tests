@@ -9,22 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world" > ./hello.txt
+      - run: cat ./hello.txt
 
 #  curl_command_test:
 #    runs-on: ubuntu-latest
 #    steps:
 #      - run: curl -s https://api.github.com/repos/ferenk/obsidian-tokenz/releases | egrep '"name"|"download_count"';
 
-  publish_anything:
-    needs: create_file
-    runs-on: ubuntu-latest
-#    uses: actions/upload-release-asset@v1
-    steps:
-      - run: cat ./hello.txt
-#    env:
-#      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      upload_url: https://github.com/ferenk/github-tests/releases/tag/Web
-#    with:
-#      asset_path: ./hello.txt
-#      asset_name: hello.txt
-#      asset_content_type: text/plain
+#   publish_anything:
+#     needs: create_file
+#     runs-on: ubuntu-latest
+# #    uses: actions/upload-release-asset@v1
+#     steps:
+#       - run: cat ./hello.txt
+# #    env:
+# #      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# #      upload_url: https://github.com/ferenk/github-tests/releases/tag/Web
+# #    with:
+# #      asset_path: ./hello.txt
+# #      asset_name: hello.txt
+# #      asset_content_type: text/plain
