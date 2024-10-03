@@ -9,3 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world"
+
+  curl_command_test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://api.github.com/repos/ferenk/obsidian-tokenz/releases | egrep '"name"|"download_count"';
