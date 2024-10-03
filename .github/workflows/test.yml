@@ -6,6 +6,7 @@ on:
 
 jobs:
   create_file:
+    id: create_file
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world" > hello.txt
