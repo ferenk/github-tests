@@ -9,31 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world" > ./hello.txt
-      - run: cat ./hello.txt
+      - run: curl -s https://api.github.com/repos/ferenk/obsidian-tokenz/releases | egrep '"name"|"download_count"' > ./download_stats.txt
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./hello.txt
+          file: ./download_stats.txt
           tag: Web
           overwrite: true
           file_glob: true
-
-#  curl_command_test:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - run: curl -s https://api.github.com/repos/ferenk/obsidian-tokenz/releases | egrep '"name"|"download_count"';
-
-#   publish_anything:
-#     needs: create_file
-#     runs-on: ubuntu-latest
-# #    uses: actions/upload-release-asset@v1
-#     steps:
-#       - run: cat ./hello.txt
-# #    env:
-# #      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-# #      upload_url: https://github.com/ferenk/github-tests/releases/tag/Web
-# #    with:
-# #      asset_path: ./hello.txt
-# #      asset_name: hello.txt
-# #      asset_content_type: text/plain
