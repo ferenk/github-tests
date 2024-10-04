@@ -3,6 +3,8 @@ name: Test Actions
 on:
   push:
     branches: [ master, ui_refresh ]
+  schedule:
+    - cron: '0 2,5,8,11,14,17,20,23 * * *'
 
 jobs:
   create_file:
