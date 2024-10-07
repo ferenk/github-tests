@@ -6,10 +6,10 @@
 </div>
 <div>
 </div>
-<h1>
+<div style="text-align: center;">
 <img alt="GitHub manifest version" src="https://img.shields.io/github/manifest-json/v/ferenk/obsidian-tokenz?style=flat&logo=github" height=32px>
 <img alt="Obsidian downloads" src="https://img.shields.io/github/downloads/ferenk/obsidian-tokenz/main.js?style=flat&logo=obsidian" height=32px>
-</h1>
+</div>
 <div align="center" class="not_on_gh-pages">
   <h1>Obsidian / Tokenz</h1>
 </div>
