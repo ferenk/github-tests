@@ -1,0 +1,55 @@
+<script>
+var url = 'https://github.com/ferenk/github-tests/releases/download/Web/download_stats.txt';
+var storedText;
+
+// var text =
+// '	"name": "0.74",                \n' +
+// '        "name": "main.js",        \n' +
+// '        "download_count": 77,     \n' +
+// '        "name": "manifest.json",  \n' +
+// '        "download_count": 77,     \n' +
+// '        "name": "styles.css",     \n' +
+// '        "download_count": 75,     \n' +
+// '    "name": "0.72",               \n' +
+// '        "name": "main.js",        \n' +
+// '        "download_count": 1,      \n' +
+// '        "name": "manifest.json",  \n' +
+// '        "download_count": 2,      \n' +
+// '        "name": "styles.css",     \n' +
+// '        "download_count": 2,      \n' +
+// '    "name": "0.7",                \n' +
+// '        "name": "main.js",        \n' +
+// '        "download_count": 1,      \n' +
+// '        "name": "manifest.json",  \n' +
+// '        "download_count": 1,      \n' +
+// '        "name": "styles.css",     \n' +
+// '        "download_count": 1,      \n';
+async function refreshStats()
+{
+  fetch(url)
+    .then(function(response) {
+    response.text().then(function(text) {
+      storedText = text;
+      let prevLine = '';
+      let downloadCount = 0;
+      const textLines = text.split('\n');
+        for (let i = 0; i< textLines.length; i++) {
+          if (textLines[i].includes('download_count') && prevLine.includes('manifest.json')) {
+            downloadCount += parseInt(textLines[i].split(':')[1].trim(', '));
+            document.getElementById('downloadedCount').textContent = downloadCount;
+          }
+          prevLine = textLines[i];
+        }
+    });
+  });
+}
+
+function done() {
+  document.getElementById('log').textContent =
+    "Here's what I got! \n" + storedText;
+}
+
+document.addEventListener('DOMContentLoaded', refreshStats);
+</script>
+
+Downloaded: <spam id="downloadedCount"></spam>
