@@ -12,7 +12,7 @@ google_analytics: GTM-T47R9MX8
 google_site_verification: dSXyPF8wjboE3nlpS89FWsrFjURklLwimxdmIloilrk
 #####################
 # Jekyll theme config
-remote_theme: ferenk/jekyll-theme-yat
+remote_theme: https://github.com/jeffreytse/jekyll-theme-yat/tree/25e15cf87413c00e6cc02e568cab22801b2625a3
 show_downloads: true
 favicon: docs/img/tokenz_for_obsidian.ico
 banner:
