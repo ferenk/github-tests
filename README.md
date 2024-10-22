@@ -1,4 +1,19 @@
-﻿<div align="center" class="not_on_gh-pages">
+﻿---
+layout: article
+title: Page - Article Header Overlay Background Image (Customized Header Background)
+header:
+  theme: dark
+  background: 'linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139))'
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+    src: /docs/assets/images/cover3.jpg
+---
+
+<div align="center" class="hide_on_gh-pages">
   <br>
   <a href="https://github.com/ferenk/obsidian-tokenz">
     <img alt="tokenz poster" src="https://ferenk.github.io/github-tests/docs/img/tokenz_poster.jpg" width="830">
@@ -10,7 +25,7 @@
 <img alt="GitHub manifest version" src="https://img.shields.io/github/manifest-json/v/ferenk/obsidian-tokenz?style=flat&logo=github" height=32px>
 <img alt="Obsidian downloads" src="https://img.shields.io/github/downloads/ferenk/obsidian-tokenz/main.js?style=flat&logo=obsidian" height=32px>
 </div>
-<div align="center" class="not_on_gh-pages">
+<div align="center" class="hide_on_gh-pages">
   <h1>Obsidian / Tokenz</h1>
 </div>
 
@@ -78,3 +93,20 @@ And now you can insert these symbols to your document this way:
 | IRC style       | ``/prog-20 20%, /prog-50 /prog-90 90%``      | => ▎ 20%, ▋ 50%, █ 90% |
 | CSS class       | ``.idea, .success``                          | => 💡, 🏆              |
 | Any crazy style | ``\|tv_episode\|``                           | => 📺                  |
+
+
+```mermaid
+sequenceDiagram
+
+participant S as km-service
+
+participant D as KM MFP
+
+D->>S: AppReqExtNotifyAuthenticate
+
+S->>D: AppResExtNotifyAuthenticate
+
+D->>S: DevReqExtGetUserConfiguration
+
+S->>D: DevResExtGetUserConfiguration
+```
