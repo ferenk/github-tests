@@ -90,18 +90,22 @@ You can use the wildcard character ``*`` to match any character sequence (even "
 Some examples:
 
 - ``+*``: Enable highlighting for all block names
-- ``-?*``: Disable highlighting for named blocks but still enable it for unnamed blocks
+- ``-?*``: Disable highlighting for named blocks but still enable it for unnamed blocks (``?*`` means: a name with at least one character)
 - ``-*, +html``: Enable html block highlighting, all others are disabled
-- ``-*, +*js*``: Enable highlighting for all block names containing "js" (e.g 'dataviewjs' blocks)
+- ``-*, +*js*``: Enable highlighting for all block names containing "js" (e.g 'dataviewjs' blocks), all others are disabled
 
 And a final example with the explanation of how it is applied:
 
-``-*, +*js*, -*json*``:
+``-*, +*js*, +javascript, -*json*``
 
-0. ``+*`` - This is the default rule, every rule set starts with this. It enables highlighting for all block names.
-1. ``-*`` - This negates the evaluation, now all block names are disabled, even the empty ones.
-2. ``+*js*`` - This rule re-enables highlighting for all block names containing "js"
-3. ``-*json*`` - This rule disables highlighting for all block names containing "json"
+0. (<font color="green">``+*``</font>) - (Hidden rule)This is the default starting state, every evaluation starts with this. It enables highlighting for all block names.
+  This is a practical starting state for negative rules.
+1. <font color="red">``-*``</font> - You can use this rule to start with the opposite starting state. Now all block names are disabled, even the empty ones (use ``-?*`` to keep them enabled).
+  This is ideal for positive rules.
+2. <font color="green">``+*js*``</font> - This rule re-enables highlighting for all block names containing "js"
+3. <font color="green">``+javascript``</font> - Enable "javascript", too
+4. <font color="red">``-*json*``</font> - This rule disables highlighting for all block names containing "json"
 
-So finally the empty block name will be <color red>disabled</color>, "javascript" will be disabled, "dataviewjs" will be enabled and "json" will be disabled.
+So finally the <font color="red">empty block name</font> will be *disabled*, <font color="green">"**js**"</font> and <font color="green">"dataview**js**"</font> (for example) will be *enabled*, <font color="green">"**javascript**"</font> will be *enabled*, too.  But <font color="red">"**json**"</font> will be *disabled*.
+Note that the order of the rules is important. Rule 4 has to be after rule 2, because *"json"* more specific than *"js"*, so only the rule with *"js"* would erase the effect of the *"json"* rule.
 
