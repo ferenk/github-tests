@@ -81,16 +81,27 @@ And now you can insert these symbols to your document this way:
 
 ### 3. Settings
 #### Highlighting
-Token text highlighting is enabled for all kind of code blocks by default, but you enable/disable block names with rulesets.
+Token text highlighting is enabled for all kind of code blocks by default, but you enable/disable any sets of block names with rulesets.
 Format of these rulesets:
 ```{+|-}<block name pattern>, ...```
 
 The rules are separated by commas, and all rules are applied in the order of appearance.
 You can use the wildcard character ``*`` to match any character sequence (even "") and the ``?`` character to match any single character.
-Some samples:
-- ``+*``: Enable highlighting for all block names
-- ``-?*``: Only unnamed blocks will be highlighted
-- ``-*, +html``: Only html blocks are enabled
-- ``-*, +*js*``: Every block name containing "js" will be highlighted (e.g 'dataviewjs' blocks)
+Some examples:
 
+- ``+*``: Enable highlighting for all block names
+- ``-?*``: Disable highlighting for named blocks but still enable it for unnamed blocks
+- ``-*, +html``: Enable html block highlighting, all others are disabled
+- ``-*, +*js*``: Enable highlighting for all block names containing "js" (e.g 'dataviewjs' blocks)
+
+And a final example with the explanation of how it is applied:
+
+``-*, +*js*, -*json*``:
+
+0. ``+*`` - This is the default rule, every rule set starts with this. It enables highlighting for all block names.
+1. ``-*`` - This negates the evaluation, now all block names are disabled, even the empty ones.
+2. ``+*js*`` - This rule re-enables highlighting for all block names containing "js"
+3. ``-*json*`` - This rule disables highlighting for all block names containing "json"
+
+So finally the empty block name will be <color red>disabled</color>, "javascript" will be disabled, "dataviewjs" will be enabled and "json" will be disabled.
 
