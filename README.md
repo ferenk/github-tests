@@ -98,13 +98,13 @@ And a final example with the explanation of how it is applied:
 
 ``-*, +*js*, +javascript, -*json*``
 
-0. (<font color="green"><tt>+*</tt></font>) - (Hidden rule)This is the default starting state, every evaluation starts with this. It enables highlighting for all block names.
+0. (<font color="green"><tt> +* </tt></font>) (Hidden rule)This is the default starting state, every evaluation starts with this. It enables highlighting for all block names.
   This is a practical starting state for negative rules.
-1. <font color="red"><tt>-*</tt></font> - You can use this rule to start with the opposite starting state. Now all block names are disabled, even the empty ones (use ``-?*`` to keep them enabled).
+1. <font color="red"><tt> -* </tt></font> - You can use this rule to start with the opposite starting state. Now all block names are disabled, even the empty ones (use ``-?*`` to keep them enabled).
   This is ideal for positive rules.
-2. <font color="green"><tt>+*js*</tt></font> - This rule re-enables highlighting for all block names containing "js"
-3. <font color="green"><tt>+javascript</tt></font> - Enable "javascript", too
-4. <font color="red"><tt>-*json*</tt></font> - This rule disables highlighting for all block names containing "json"
+2. <font color="green"><tt> +*js* </tt></font> This rule re-enables highlighting for all block names containing "js"
+3. <font color="green"><tt> +javascript </tt></font> Enable "javascript", too
+4. <font color="red"><tt> -*json* </tt></font> This rule disables highlighting for all block names containing "json"
 
 So finally the <font color="red">empty block name</font> will be *disabled*, <font color="green">"<b>js</b>"</font> and <font color="green">"dataview<b>js</b>"</font> (for example) will be *enabled*, <font color="green">"<b>javascript</b>"</font> will be *enabled*, too. But <font color="red">"<b>json</b>"</font> will be *disabled*.
 
