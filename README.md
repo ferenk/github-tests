@@ -106,6 +106,6 @@ And a final example with the explanation of how it is applied:
 3. <font color="green">``+javascript``</font> - Enable "javascript", too
 4. <font color="red">``-*json*``</font> - This rule disables highlighting for all block names containing "json"
 
-So finally the <font color="red">empty block name</font> will be *disabled*, $${\color{green}**js**}$$ and <font color="green">"dataview**js**"</font> (for example) will be *enabled*, <font color="green">"**javascript**"</font> will be *enabled*, too.  But <font color="red">"**json**"</font> will be *disabled*.
+So finally the <font color="red">empty block name</font> will be *disabled*, <font color="green">js</font> and <font color="green">"dataview<b>js</b>"</font> (for example) will be *enabled*, <font color="green">"**javascript**"</font> will be *enabled*, too.  But <font color="red">"**json**"</font> will be *disabled*.
 Note that the order of the rules is important. Rule 4 has to be after rule 2, because *"json"* more specific than *"js"*, so only the rule with *"js"* would erase the effect of the *"json"* rule.
 
